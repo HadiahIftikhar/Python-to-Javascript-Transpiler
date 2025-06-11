@@ -1,119 +1,59 @@
 digraph {
-	node170 [label=Program]
-	node171 [label="FunctionDef(factorial)"]
-	node170 -> node171
-	node172 [label=IfStatement]
-	node171 -> node172
-	node173 [label="BinaryOp(==)"]
-	node172 -> node173
-	node174 [label="Identifier(n)"]
-	node173 -> node174
-	node175 [label="Literal(0)"]
-	node173 -> node175
-	node176 [label=Return]
-	node172 -> node176
-	node177 [label="Literal(1)"]
-	node176 -> node177
-	node178 [label=Return]
-	node172 -> node178
-	node179 [label="BinaryOp(*)"]
-	node178 -> node179
-	node180 [label="Identifier(n)"]
-	node179 -> node180
-	node181 [label=Call]
-	node179 -> node181
-	node182 [label="Identifier(factorial)"]
-	node181 -> node182
-	node183 [label="BinaryOp(-)"]
-	node181 -> node183
-	node184 [label="Identifier(n)"]
-	node183 -> node184
-	node185 [label="Literal(1)"]
-	node183 -> node185
-	node186 [label="FunctionDef(is_even)"]
-	node170 -> node186
-	node187 [label=Return]
-	node186 -> node187
-	node188 [label="BinaryOp(==)"]
-	node187 -> node188
-	node189 [label="BinaryOp(%)"]
-	node188 -> node189
-	node190 [label="Identifier(num)"]
-	node189 -> node190
-	node191 [label="Literal(2)"]
-	node189 -> node191
-	node192 [label="Literal(0)"]
-	node188 -> node192
-	node193 [label=ExpressionStatement]
-	node170 -> node193
-	node194 [label="BinaryOp(=)"]
-	node193 -> node194
-	node195 [label="Identifier(x)"]
-	node194 -> node195
-	node196 [label="Literal(5)"]
-	node194 -> node196
-	node197 [label=ExpressionStatement]
-	node170 -> node197
-	node198 [label="BinaryOp(=)"]
-	node197 -> node198
-	node199 [label="Identifier(fact)"]
-	node198 -> node199
-	node200 [label=Call]
-	node198 -> node200
-	node201 [label="Identifier(factorial)"]
-	node200 -> node201
-	node202 [label="Identifier(x)"]
-	node200 -> node202
-	node203 [label=IfStatement]
-	node170 -> node203
-	node204 [label=Call]
-	node203 -> node204
-	node205 [label="Identifier(is_even)"]
-	node204 -> node205
-	node206 [label="Identifier(fact)"]
-	node204 -> node206
-	node207 [label=ExpressionStatement]
-	node203 -> node207
-	node208 [label=Call]
-	node207 -> node208
-	node209 [label="Identifier(print)"]
-	node208 -> node209
-	node210 [label="Literal('Even factorial')"]
-	node208 -> node210
-	node211 [label=ExpressionStatement]
-	node203 -> node211
-	node212 [label=Call]
-	node211 -> node212
-	node213 [label="Identifier(print)"]
-	node212 -> node213
-	node214 [label="Literal('Odd factorial')"]
-	node212 -> node214
-	node215 [label="ForLoop(i)"]
-	node170 -> node215
-	node216 [label=Call]
-	node215 -> node216
-	node217 [label="Identifier(range)"]
-	node216 -> node217
-	node218 [label="Literal(3)"]
-	node216 -> node218
-	node219 [label=ExpressionStatement]
-	node215 -> node219
-	node220 [label="BinaryOp(=)"]
-	node219 -> node220
-	node221 [label="Identifier(result)"]
-	node220 -> node221
-	node222 [label=Call]
-	node220 -> node222
-	node223 [label="Identifier(factorial)"]
-	node222 -> node223
-	node224 [label="Identifier(i)"]
-	node222 -> node224
-	node225 [label=ExpressionStatement]
-	node215 -> node225
-	node226 [label=Call]
-	node225 -> node226
-	node227 [label="Identifier(print)"]
-	node226 -> node227
-	node228 [label="Identifier(result)"]
-	node226 -> node228
+	node53 [label=Program]
+	node54 [label="FunctionDef(square)"]
+	node53 -> node54
+	node55 [label=Return]
+	node54 -> node55
+	node56 [label="BinaryOp(*)"]
+	node55 -> node56
+	node57 [label="Identifier(x)"]
+	node56 -> node57
+	node58 [label="Identifier(x)"]
+	node56 -> node58
+	node59 [label="FunctionDef(add)"]
+	node53 -> node59
+	node60 [label="Assignment(result)"]
+	node59 -> node60
+	node61 [label="BinaryOp(+)"]
+	node60 -> node61
+	node62 [label="Identifier(a)"]
+	node61 -> node62
+	node63 [label="Identifier(b)"]
+	node61 -> node63
+	node64 [label=Return]
+	node59 -> node64
+	node65 [label="Identifier(result)"]
+	node64 -> node65
+	node66 [label="Assignment(value)"]
+	node53 -> node66
+	node67 [label="Literal(5)"]
+	node66 -> node67
+	node68 [label="Assignment(squared)"]
+	node53 -> node68
+	node69 [label=Call]
+	node68 -> node69
+	node70 [label="Identifier(square)"]
+	node69 -> node70
+	node71 [label="Identifier(value)"]
+	node69 -> node71
+	node72 [label="Assignment(total)"]
+	node53 -> node72
+	node73 [label=Call]
+	node72 -> node73
+	node74 [label="Identifier(add)"]
+	node73 -> node74
+	node75 [label="Identifier(squared)"]
+	node73 -> node75
+	node76 [label="Literal(10)"]
+	node73 -> node76
+	node77 [label="FunctionDef(test)"]
+	node53 -> node77
+	node78 [label="Assignment(message)"]
+	node77 -> node78
+	node79 [label="Literal('All good!')"]
+	node78 -> node79
+	node80 [label=Return]
+	node77 -> node80
+	node81 [label="Identifier(message)"]
+	node80 -> node81
 }
