@@ -1,59 +1,36 @@
+// AST
 digraph {
-	node53 [label=Program]
-	node54 [label="FunctionDef(square)"]
-	node53 -> node54
-	node55 [label=Return]
-	node54 -> node55
-	node56 [label="BinaryOp(*)"]
-	node55 -> node56
-	node57 [label="Identifier(x)"]
-	node56 -> node57
-	node58 [label="Identifier(x)"]
-	node56 -> node58
-	node59 [label="FunctionDef(add)"]
-	node53 -> node59
-	node60 [label="Assignment(result)"]
-	node59 -> node60
-	node61 [label="BinaryOp(+)"]
-	node60 -> node61
-	node62 [label="Identifier(a)"]
-	node61 -> node62
-	node63 [label="Identifier(b)"]
-	node61 -> node63
-	node64 [label=Return]
-	node59 -> node64
-	node65 [label="Identifier(result)"]
-	node64 -> node65
-	node66 [label="Assignment(value)"]
-	node53 -> node66
-	node67 [label="Literal(5)"]
-	node66 -> node67
-	node68 [label="Assignment(squared)"]
-	node53 -> node68
-	node69 [label=Call]
-	node68 -> node69
-	node70 [label="Identifier(square)"]
-	node69 -> node70
-	node71 [label="Identifier(value)"]
-	node69 -> node71
-	node72 [label="Assignment(total)"]
-	node53 -> node72
-	node73 [label=Call]
-	node72 -> node73
-	node74 [label="Identifier(add)"]
-	node73 -> node74
-	node75 [label="Identifier(squared)"]
-	node73 -> node75
-	node76 [label="Literal(10)"]
-	node73 -> node76
-	node77 [label="FunctionDef(test)"]
-	node53 -> node77
-	node78 [label="Assignment(message)"]
-	node77 -> node78
-	node79 [label="Literal('All good!')"]
-	node78 -> node79
-	node80 [label=Return]
-	node77 -> node80
-	node81 [label="Identifier(message)"]
-	node80 -> node81
+	node663 [label=Program]
+	node664 [label="FunctionDef(add)\nreturn_type=float"]
+	node663 -> node664
+	node665 [label="Assignment(result)\ntype=float"]
+	node664 -> node665
+	node666 [label="BinaryOp(+)\ntype=float"]
+	node665 -> node666
+	node667 [label="Identifier(a)\ntype=int"]
+	node666 -> node667
+	node668 [label="Identifier(b)\ntype=float"]
+	node666 -> node668
+	node669 [label="Return\ntype=float"]
+	node664 -> node669
+	node670 [label="Identifier(result)\ntype=float"]
+	node669 -> node670
+	node671 [label="Assignment(x)\ntype=int"]
+	node663 -> node671
+	node672 [label="Literal(1)\ntype=int, const=1"]
+	node671 -> node672
+	node673 [label="Assignment(y)\ntype=float"]
+	node663 -> node673
+	node674 [label="Literal(2.5)\ntype=float, const=2.5"]
+	node673 -> node674
+	node675 [label="Assignment(z)\ntype=float"]
+	node663 -> node675
+	node676 [label="Call\ntype=float"]
+	node675 -> node676
+	node677 [label="Identifier(add)"]
+	node676 -> node677
+	node678 [label="Identifier(x)\ntype=int"]
+	node676 -> node678
+	node679 [label="Identifier(y)\ntype=float"]
+	node676 -> node679
 }
