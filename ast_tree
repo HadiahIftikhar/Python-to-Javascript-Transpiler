@@ -1,36 +1,60 @@
 // AST
 digraph {
-	node663 [label=Program]
-	node664 [label="FunctionDef(add)\nreturn_type=float"]
-	node663 -> node664
-	node665 [label="Assignment(result)\ntype=float"]
-	node664 -> node665
-	node666 [label="BinaryOp(+)\ntype=float"]
-	node665 -> node666
-	node667 [label="Identifier(a)\ntype=int"]
-	node666 -> node667
-	node668 [label="Identifier(b)\ntype=float"]
-	node666 -> node668
-	node669 [label="Return\ntype=float"]
-	node664 -> node669
-	node670 [label="Identifier(result)\ntype=float"]
-	node669 -> node670
-	node671 [label="Assignment(x)\ntype=int"]
-	node663 -> node671
-	node672 [label="Literal(1)\ntype=int, const=1"]
-	node671 -> node672
-	node673 [label="Assignment(y)\ntype=float"]
-	node663 -> node673
-	node674 [label="Literal(2.5)\ntype=float, const=2.5"]
-	node673 -> node674
-	node675 [label="Assignment(z)\ntype=float"]
-	node663 -> node675
-	node676 [label="Call\ntype=float"]
-	node675 -> node676
-	node677 [label="Identifier(add)"]
-	node676 -> node677
-	node678 [label="Identifier(x)\ntype=int"]
-	node676 -> node678
-	node679 [label="Identifier(y)\ntype=float"]
-	node676 -> node679
+	node323 [label=Program]
+	node324 [label="FunctionDef(square)\nreturn_type=int"]
+	node323 -> node324
+	node325 [label="Return\ntype=int"]
+	node324 -> node325
+	node326 [label="BinaryOp(*)\ntype=int"]
+	node325 -> node326
+	node327 [label="Identifier(x)\ntype=int"]
+	node326 -> node327
+	node328 [label="Identifier(x)\ntype=int"]
+	node326 -> node328
+	node329 [label="FunctionDef(add)\nreturn_type=int"]
+	node323 -> node329
+	node330 [label="Assignment(result)\ntype=int"]
+	node329 -> node330
+	node331 [label="BinaryOp(+)\ntype=int"]
+	node330 -> node331
+	node332 [label="Identifier(a)\ntype=int"]
+	node331 -> node332
+	node333 [label="Identifier(b)\ntype=int"]
+	node331 -> node333
+	node334 [label="Return\ntype=int"]
+	node329 -> node334
+	node335 [label="Identifier(result)\ntype=int"]
+	node334 -> node335
+	node336 [label="Assignment(value)\ntype=int"]
+	node323 -> node336
+	node337 [label="Literal(5)\ntype=int, const=5"]
+	node336 -> node337
+	node338 [label="Assignment(squared)\ntype=int"]
+	node323 -> node338
+	node339 [label="Call\ntype=int"]
+	node338 -> node339
+	node340 [label="Identifier(square)"]
+	node339 -> node340
+	node341 [label="Identifier(value)\ntype=int"]
+	node339 -> node341
+	node342 [label="Assignment(total)\ntype=int"]
+	node323 -> node342
+	node343 [label="Call\ntype=int"]
+	node342 -> node343
+	node344 [label="Identifier(add)"]
+	node343 -> node344
+	node345 [label="Identifier(squared)\ntype=int"]
+	node343 -> node345
+	node346 [label="Literal(10)\ntype=int, const=10"]
+	node343 -> node346
+	node347 [label="FunctionDef(test)\nreturn_type=str"]
+	node323 -> node347
+	node348 [label="Assignment(message)\ntype=str"]
+	node347 -> node348
+	node349 [label="Literal('All good!')\ntype=str, const=All good!"]
+	node348 -> node349
+	node350 [label="Return\ntype=str"]
+	node347 -> node350
+	node351 [label="Identifier(message)\ntype=str"]
+	node350 -> node351
 }
