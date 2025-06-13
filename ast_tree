@@ -1,36 +1,28 @@
 // AST
 digraph {
-	node87 [label=Program]
-	node88 [label="FunctionDef(add)\nreturn_type=float"]
-	node87 -> node88
-	node89 [label="Assignment(result)\ntype=float"]
-	node88 -> node89
-	node90 [label="BinaryOp(+)\ntype=float"]
-	node89 -> node90
-	node91 [label="Identifier(a)\ntype=int"]
-	node90 -> node91
-	node92 [label="Identifier(b)\ntype=float"]
-	node90 -> node92
-	node93 [label="Return\ntype=float"]
-	node88 -> node93
-	node94 [label="Identifier(result)\ntype=float"]
-	node93 -> node94
-	node95 [label="Assignment(x)\ntype=int"]
-	node87 -> node95
-	node96 [label="Literal(1)\ntype=int, const=1"]
-	node95 -> node96
-	node97 [label="Assignment(y)\ntype=float"]
-	node87 -> node97
-	node98 [label="Literal(2.5)\ntype=float, const=2.5"]
-	node97 -> node98
-	node99 [label="Assignment(z)\ntype=float"]
-	node87 -> node99
-	node100 [label="Call\ntype=float"]
-	node99 -> node100
-	node101 [label="Identifier(add)"]
-	node100 -> node101
-	node102 [label="Identifier(x)\ntype=int"]
-	node100 -> node102
-	node103 [label="Identifier(y)\ntype=float"]
-	node100 -> node103
+	node13 [label=Program]
+	node14 [label="Assignment(a)\ntype=int"]
+	node13 -> node14
+	node15 [label="Literal(5)\ntype=int, const=5"]
+	node14 -> node15
+	node16 [label="Assignment(b)\ntype=int"]
+	node13 -> node16
+	node17 [label="Literal(9)\ntype=int, const=9"]
+	node16 -> node17
+	node18 [label="Assignment(c)\ntype=int"]
+	node13 -> node18
+	node19 [label="BinaryOp(+)\ntype=int"]
+	node18 -> node19
+	node20 [label="Identifier(a)\ntype=int"]
+	node19 -> node20
+	node21 [label="Identifier(b)\ntype=int"]
+	node19 -> node21
+	node22 [label=ExpressionStatement]
+	node13 -> node22
+	node23 [label="Call\ntype=None"]
+	node22 -> node23
+	node24 [label="Identifier(print)"]
+	node23 -> node24
+	node25 [label="Identifier(c)\ntype=int"]
+	node23 -> node25
 }
