@@ -1,4 +1,4 @@
 // AST
 digraph {
-	node463 [label=Program]
+	node1 [label=Program]
 }
