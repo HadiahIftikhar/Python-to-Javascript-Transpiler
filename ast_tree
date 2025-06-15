@@ -1,4 +1,52 @@
 // AST
 digraph {
-	node1 [label=Program]
+	node101 [label=Program]
+	node102 [label="FunctionDef(calculate)\nreturn_type=int"]
+	node101 -> node102
+	node103 [label="Assignment(a)\ntype=int"]
+	node102 -> node103
+	node104 [label="BinaryOp(+)\ntype=int, const=11"]
+	node103 -> node104
+	node105 [label="Literal(5)\ntype=int, const=5"]
+	node104 -> node105
+	node106 [label="BinaryOp(*)\ntype=int, const=6"]
+	node104 -> node106
+	node107 [label="Literal(3)\ntype=int, const=3"]
+	node106 -> node107
+	node108 [label="Literal(2)\ntype=int, const=2"]
+	node106 -> node108
+	node109 [label="Assignment(b)\ntype=int"]
+	node102 -> node109
+	node110 [label="BinaryOp(/)\ntype=int, const=5.0"]
+	node109 -> node110
+	node111 [label="Literal(10)\ntype=int, const=10"]
+	node110 -> node111
+	node112 [label="Literal(2)\ntype=int, const=2"]
+	node110 -> node112
+	node113 [label="Assignment(c)\ntype=int"]
+	node102 -> node113
+	node114 [label="BinaryOp(-)\ntype=int"]
+	node113 -> node114
+	node115 [label="BinaryOp(+)\ntype=int"]
+	node114 -> node115
+	node116 [label="Identifier(a)\ntype=int"]
+	node115 -> node116
+	node117 [label="Identifier(b)\ntype=int"]
+	node115 -> node117
+	node118 [label="BinaryOp(*)\ntype=int, const=6"]
+	node114 -> node118
+	node119 [label="Literal(2)\ntype=int, const=2"]
+	node118 -> node119
+	node120 [label="Literal(3)\ntype=int, const=3"]
+	node118 -> node120
+	node121 [label="Return\ntype=int"]
+	node102 -> node121
+	node122 [label="Identifier(c)\ntype=int"]
+	node121 -> node122
+	node123 [label="Assignment(result)\ntype=int"]
+	node101 -> node123
+	node124 [label="Call\ntype=int"]
+	node123 -> node124
+	node125 [label="Identifier(calculate)"]
+	node124 -> node125
 }

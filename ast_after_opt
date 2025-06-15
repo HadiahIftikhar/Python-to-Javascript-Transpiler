@@ -1,36 +1,38 @@
 // AST
 digraph {
-	node87 [label=Program]
-	node88 [label="FunctionDef(calculate)\nreturn_type=int"]
-	node87 -> node88
-	node89 [label="Assignment(a)\ntype=int"]
-	node88 -> node89
-	node90 [label="Literal(11)\ntype=int, const=11"]
-	node89 -> node90
-	node91 [label="Assignment(b)\ntype=int"]
-	node88 -> node91
-	node92 [label="Literal(5.0)\ntype=int, const=5.0"]
-	node91 -> node92
-	node93 [label="Assignment(c)\ntype=int"]
-	node88 -> node93
-	node94 [label="BinaryOp(-)\ntype=int"]
-	node93 -> node94
-	node95 [label="BinaryOp(+)\ntype=int"]
-	node94 -> node95
-	node96 [label="Identifier(a)\ntype=int"]
-	node95 -> node96
-	node97 [label="Identifier(b)\ntype=int"]
-	node95 -> node97
-	node98 [label="Literal(6)\ntype=int, const=6"]
-	node94 -> node98
-	node99 [label="Return\ntype=int"]
-	node88 -> node99
-	node100 [label="Identifier(c)\ntype=int"]
-	node99 -> node100
-	node101 [label="Assignment(result)\ntype=int"]
-	node87 -> node101
-	node102 [label="Call\ntype=int"]
-	node101 -> node102
-	node103 [label="Identifier(calculate)"]
-	node102 -> node103
+	node160 [label=Program]
+	node161 [label="FunctionDef(optimized_function)\nreturn_type=int"]
+	node160 -> node161
+	node162 [label="Assignment(a)\ntype=int"]
+	node161 -> node162
+	node163 [label="Literal(15)\ntype=int, const=15"]
+	node162 -> node163
+	node164 [label="Assignment(b)\ntype=int"]
+	node161 -> node164
+	node165 [label="BinaryOp(*)\ntype=int"]
+	node164 -> node165
+	node166 [label="Identifier(a)\ntype=int"]
+	node165 -> node166
+	node167 [label="Literal(2)\ntype=int, const=2"]
+	node165 -> node167
+	node168 [label="Assignment(c)\ntype=int"]
+	node161 -> node168
+	node169 [label="BinaryOp(-)\ntype=int"]
+	node168 -> node169
+	node170 [label="Identifier(b)\ntype=int"]
+	node169 -> node170
+	node171 [label="Literal(10)\ntype=int, const=10"]
+	node169 -> node171
+	node172 [label="Assignment(result)\ntype=int"]
+	node161 -> node172
+	node173 [label="BinaryOp(+)\ntype=int"]
+	node172 -> node173
+	node174 [label="Identifier(c)\ntype=int"]
+	node173 -> node174
+	node175 [label="Literal(2)\ntype=int, const=2"]
+	node173 -> node175
+	node176 [label="Return\ntype=int"]
+	node161 -> node176
+	node177 [label="Identifier(result)\ntype=int"]
+	node176 -> node177
 }
