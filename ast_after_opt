@@ -1,38 +1,36 @@
 // AST
 digraph {
-	node160 [label=Program]
-	node161 [label="FunctionDef(optimized_function)\nreturn_type=int"]
-	node160 -> node161
-	node162 [label="Assignment(a)\ntype=int"]
-	node161 -> node162
-	node163 [label="Literal(15)\ntype=int, const=15"]
-	node162 -> node163
-	node164 [label="Assignment(b)\ntype=int"]
-	node161 -> node164
-	node165 [label="BinaryOp(*)\ntype=int"]
-	node164 -> node165
-	node166 [label="Identifier(a)\ntype=int"]
-	node165 -> node166
-	node167 [label="Literal(2)\ntype=int, const=2"]
-	node165 -> node167
-	node168 [label="Assignment(c)\ntype=int"]
-	node161 -> node168
-	node169 [label="BinaryOp(-)\ntype=int"]
-	node168 -> node169
-	node170 [label="Identifier(b)\ntype=int"]
-	node169 -> node170
-	node171 [label="Literal(10)\ntype=int, const=10"]
-	node169 -> node171
-	node172 [label="Assignment(result)\ntype=int"]
-	node161 -> node172
-	node173 [label="BinaryOp(+)\ntype=int"]
-	node172 -> node173
-	node174 [label="Identifier(c)\ntype=int"]
-	node173 -> node174
-	node175 [label="Literal(2)\ntype=int, const=2"]
-	node173 -> node175
-	node176 [label="Return\ntype=int"]
-	node161 -> node176
-	node177 [label="Identifier(result)\ntype=int"]
-	node176 -> node177
+	node220 [label=Program]
+	node221 [label="FunctionDef(calculate)\nreturn_type=int"]
+	node220 -> node221
+	node222 [label="Assignment(a)\ntype=int"]
+	node221 -> node222
+	node223 [label="Literal(11)\ntype=int, const=11"]
+	node222 -> node223
+	node224 [label="Assignment(b)\ntype=int"]
+	node221 -> node224
+	node225 [label="Literal(5.0)\ntype=int, const=5.0"]
+	node224 -> node225
+	node226 [label="Assignment(c)\ntype=int"]
+	node221 -> node226
+	node227 [label="BinaryOp(-)\ntype=int"]
+	node226 -> node227
+	node228 [label="BinaryOp(+)\ntype=int"]
+	node227 -> node228
+	node229 [label="Identifier(a)\ntype=int"]
+	node228 -> node229
+	node230 [label="Identifier(b)\ntype=int"]
+	node228 -> node230
+	node231 [label="Literal(6)\ntype=int, const=6"]
+	node227 -> node231
+	node232 [label="Return\ntype=int"]
+	node221 -> node232
+	node233 [label="Identifier(c)\ntype=int"]
+	node232 -> node233
+	node234 [label="Assignment(result)\ntype=int"]
+	node220 -> node234
+	node235 [label="Call\ntype=int"]
+	node234 -> node235
+	node236 [label="Identifier(calculate)"]
+	node235 -> node236
 }
