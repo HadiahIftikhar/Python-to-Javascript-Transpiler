@@ -1,36 +1,36 @@
 // AST
 digraph {
-	node87 [label=Program]
-	node88 [label="FunctionDef(calculate)\nreturn_type=int"]
-	node87 -> node88
-	node89 [label="Assignment(a)\ntype=int"]
-	node88 -> node89
-	node90 [label="Literal(11)\ntype=int, const=11"]
-	node89 -> node90
-	node91 [label="Assignment(b)\ntype=int"]
-	node88 -> node91
-	node92 [label="Literal(5.0)\ntype=int, const=5.0"]
-	node91 -> node92
-	node93 [label="Assignment(c)\ntype=int"]
-	node88 -> node93
-	node94 [label="BinaryOp(-)\ntype=int"]
-	node93 -> node94
-	node95 [label="BinaryOp(+)\ntype=int"]
-	node94 -> node95
-	node96 [label="Identifier(a)\ntype=int"]
-	node95 -> node96
-	node97 [label="Identifier(b)\ntype=int"]
-	node95 -> node97
-	node98 [label="Literal(6)\ntype=int, const=6"]
-	node94 -> node98
-	node99 [label="Return\ntype=int"]
-	node88 -> node99
-	node100 [label="Identifier(c)\ntype=int"]
-	node99 -> node100
-	node101 [label="Assignment(result)\ntype=int"]
-	node87 -> node101
-	node102 [label="Call\ntype=int"]
-	node101 -> node102
-	node103 [label="Identifier(calculate)"]
-	node102 -> node103
+	node601 [label=Program]
+	node602 [label="FunctionDef(calculate)\nreturn_type=int"]
+	node601 -> node602
+	node603 [label="Assignment(a)\ntype=int"]
+	node602 -> node603
+	node604 [label="Literal(11)\ntype=int, const=11"]
+	node603 -> node604
+	node605 [label="Assignment(b)\ntype=int"]
+	node602 -> node605
+	node606 [label="Literal(5.0)\ntype=int, const=5.0"]
+	node605 -> node606
+	node607 [label="Assignment(c)\ntype=int"]
+	node602 -> node607
+	node608 [label="BinaryOp(-)\ntype=int"]
+	node607 -> node608
+	node609 [label="BinaryOp(+)\ntype=int"]
+	node608 -> node609
+	node610 [label="Identifier(a)\ntype=int"]
+	node609 -> node610
+	node611 [label="Identifier(b)\ntype=int"]
+	node609 -> node611
+	node612 [label="Literal(6)\ntype=int, const=6"]
+	node608 -> node612
+	node613 [label="Return\ntype=int"]
+	node602 -> node613
+	node614 [label="Identifier(c)\ntype=int"]
+	node613 -> node614
+	node615 [label="Assignment(result)\ntype=int"]
+	node601 -> node615
+	node616 [label="Call\ntype=int"]
+	node615 -> node616
+	node617 [label="Identifier(calculate)"]
+	node616 -> node617
 }
